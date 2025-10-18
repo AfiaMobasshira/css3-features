@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Features</title>
+    <style>
+        .ellipse{
+            width: 200px;
+            white-space: nowrap;
+            border: 2px solid steelblue;
+            padding: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* text-overflow: clip; */
+        }
+        .box{
+           border: 2px solid steelblue;
+           width: 400px;
+           height: 200px;
+           margin-bottom: 20px;
+           /* overflow: scroll; */
+           /* overflow-y: scroll; */
+           /* overflow-x: hidden; */
+           overflow: auto;  /* It's better case use for overflow. where overflow need it will happen or not */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS3 Features</h1>
+        <p title="Live as if you were to die tomorrow. Learn as if you were to live forever." class="ellipse">Live as if you were to die tomorrow. Learn as if you were to live forever.</p>
+    </header>
+    <div id="box-1" class="box">
+        <h3>My text box-1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam praesentium, veritatis libero totam sed dolore sequi ea dolor animi quos, pariatur aliquid accusantium tempora assumenda adipisci, ipsam hic. Iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti sint facilis vel nihil error repellendus adipisci veritatis sed odio architecto perspiciatis nisi laboriosam, et optio nemo animi repellat qui.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam praesentium, veritatis libero totam sed dolore sequi ea dolor animi quos, pariatur aliquid accusantium tempora assumenda adipisci, ipsam hic. Iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti sint facilis vel nihil error repellendus adipisci veritatis sed odio architecto perspiciatis nisi laboriosam, et optio nemo animi repellat qui.
+        </p>
+    </div>
+    <div class="box">
+        <h3>My text box-2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam praesentium, veritatis libero totam sed dolore sequi ea dolor animi quos, pariatur aliquid accusantium tempora assumenda adipisci, ipsam hic. Iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti sint facilis vel nihil error repellendus adipisci veritatis sed odio architecto perspiciatis nisi laboriosam, et optio nemo animi repellat qui.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam praesentium, veritatis libero totam sed dolore sequi ea dolor animi quos, pariatur aliquid accusantium tempora assumenda adipisci, ipsam hic. Iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti sint facilis vel nihil error repellendus adipisci veritatis sed odio architecto perspiciatis nisi laboriosam, et optio nemo animi repellat qui.
+        </p>
+    </div>
+    <div class="box">
+        <h3>My text box-3</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis error tempore libero earum quisquam possimus enim accusantium hic facilis laudantium.</p>
+    </div>
+
+</body>
+</html>
