@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-left: 30px;
+            border: 2px solid tomato;
+            background-color: peachpuff;
+            /* property name | duration | easing function | delay */
+            /* transition: width 5s linear 0.3s, background-color 2s ease 1s; */
+            transition: transform 1s;
+        }
+        .box:hover{
+            transform: rotate(45deg) scale(1.25) translateX(150px);
+            /* width: 400px;
+            background-color: aliceblue; */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform: Change the shape. This is a CSS style property name.</li>
+        <li>Translate: It is a value style that transform the position to X-axis or Y-axis or both. </li>
+        <li>Transition: How long it will take to do the change of the shape or color</li>
+    </ul>
+    <div class="box">Box - 1</div>
+    <div class="box">Box - 2</div>
+    <div class="box">Box - 3</div>
+</body>
+</html>
