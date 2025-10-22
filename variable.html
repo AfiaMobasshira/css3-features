@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --primary-color: steelblue;
+            --secondary-color: seagreen;
+            --background-color:  skyblue;
+            --box-border-color: saddlebrown;
+            --font-size: 25px;
+            --secondary-font-size: 20px;
+        }
+        h1{
+            color: var(--primary-color);
+        }
+        h5{
+            color: var(--secondary-color);
+            font-size: var(--font-size);
+        }
+        .box{
+            border: 2px solid var(--box-border-color);
+            padding: 16px;
+            width: calc(100% - 200px);
+        }
+        .box h3, .box p{
+            background-color: var(--background-color);
+            font-size: var(--secondary-font-size);
+        }
+        .sidebar{
+            background-color: lightgray;
+        }
+        .main-content{
+            background-color: lightseagreen;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px); /* sidebar's 200px minus from 100% and 20px gap between them minus from 100% too*/
+            grid-template-rows: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Custom Properties</h1>
+    <h5>Also commonly known as css variable</h5>
+    <div class="box">
+        <h3>Doing Something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, error laudantium reiciendis rem in laborum atque aliquid eligendi ipsum! Nesciunt hic amet esse deleniti! Assumenda iste inventore repellendus exercitationem quo.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio corrupti modi delectus maxime impedit vel repudiandae quia sint molestias explicabo, rerum a eligendi, hic nobis provident sed, natus veritatis veniam!</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+    </div>
+</body>
+</html>
